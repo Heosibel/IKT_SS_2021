@@ -239,3 +239,55 @@ H_T &= H(Y) - H(Y|X) \\
 $$
 
 Alle Eregnisse wurden gerundet! Bei genauerer Berechnung kann sich eine Differenz zum aktuellen Ergebiss ab der 2ten Stelle ergeben.
+
+
+
+#### Aufgabe 6
+
+<img src="/home/tieschne/Dokumente/Seafile/Studium/4_Semester/1_IKT/LösungenAufgabensammlung/Aufgabenbereich_3/6_1.png" alt="6_1" style="zoom:33%;" />
+$$
+\begin{align*}
+p(x_0) &= 0.3 , p(x_1) = 0.1, p(x_2) = 0.1, p(x_3) = 0.35 , p(x_4) = 0.15 \\
+\\
+p(y_0) &= 0.4, p(y_1) = 0.2, p(y_2) = 0.25, p(y_3) = 0.15
+\end{align*}
+$$
+
+
+Die Berechnung von $p(x_0),p(x_1), ...$ wird über die Addition der jeweiligen Zeile berechnet. 
+
+Für die Wahrscheinlichkeiten $p(y_0), p(y_1), ...$ wird die jeweilige Spalte addiert. 
+
+
+$$
+\begin{align*}
+H(X) &= 0.3 \cdot \log_2 \frac{1}{0.3} + 0.1 \cdot \log_2 \frac{1}{0.1} \cdot 2 + 0.35 \cdot \log_2 \frac{1}{0.35} + 0.15 \cdot \log_2 \frac{1}{0.15} \\
+&= 2.13 \\
+\\
+H(Y) &= 0.4 \cdot \log_2 \frac{1}{0.4} + 0.2 \cdot \log_2 \frac{1}{0.2} + 0.25 \cdot \log_2 \frac{1}{0.25} + 0.15 \cdot \log_2 \frac{1}{0.15} \\
+&= 1.90 \\
+\\
+\end{align*}
+$$
+Berechnung der Übergangswahrscheinlichkeiten mittels der Formeln:
+
+$p(y_{j}|x_{i}) = \frac {p(x_{i},y_{j})} {p(x_i)}$ und $p(x_{i}|y_{j}) = \frac {p(x_{i},y_{j})} {p(y_j)}$
+
+$p(y_j|x_i) = \begin{pmatrix} \frac{5}{6} & 0 & \frac{1}{6} & 0 \\ 0 & 0 & 1 & 0 \\ 0 & 0 & 1 & 0 \\ \frac{3}{7} &  \frac{4}{7} & 0 & 0 \\ 0 & 0 & 0 & 1 \end{pmatrix}$ 				$p(x_i|y_j) = \begin{pmatrix} \frac{5}{8} & 0 & \frac{1}{5} & 0 \\ 0 & 0 & \frac{2}{5} & 0 \\ 0 & 0 & \frac{2}{5} & 0 \\ \frac{3}{8} &  1 & 0 & 0 \\ 0 & 0 & 0 & 1 \end{pmatrix} $
+
+
+$$
+\begin{align*}
+H(X|Y) &= 0.4 \cdot ( \frac{5}{8} \cdot \log_2 \frac{8}{5} + \frac{3}{8} \cdot \log_2 \frac{8}{3}) + 0.2 \cdot (1 \cdot \log_2 1) + 0.25 \cdot (\frac{1}{5} \cdot \log_2 \frac{5}{1} + \frac{2}{5} \cdot \log_2 \frac{5}{2}+ \frac{2}{5} \cdot \log_2 \frac{5}{2}) + 0.15 \cdot (1 \cdot \log_2 1)\\
+&= 0.76 \\
+\\
+H(Y|X) &= 0.3 \cdot (\frac{5}{6} \cdot \log_2 \frac{6}{5} + \frac{1}{6} \cdot \log_2 \frac{6}{1}) + 0.1 \cdot (1 \cdot \log_2 1) \cdot 2 + 0.35 \cdot (\frac{3}{7} \cdot \log_2 \frac{7}{3} + \frac{4}{7} \cdot \log_2 \frac{7}{4}) + 0.15 \cdot (1 \cdot \log_2 1) \\
+&= 0.54 \\
+\\
+H_T &= H(Y) - H(Y|X) = 1.90 - 0.54 \\
+H_T &= H(X) - H(X|Y) = 2.13 - 0.76 \\
+H_T &= 1.36 \frac{bit}{KZ}
+\end{align*}
+$$
+Achtung bei der genauen Berechnung der letzen Gleichung kommt es zu kleinen Abweichungen durch Rundungen!
+
