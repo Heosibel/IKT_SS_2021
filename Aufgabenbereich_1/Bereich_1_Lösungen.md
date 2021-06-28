@@ -114,7 +114,7 @@ $$
 #### b)
 
 $$
-H_{m} = 2.07 \cdot \log_{2}16 = 6.07 \frac{bit}{Amplitudenwert}
+H_{m} = 2.07 + \log_{2}16 = 6.07 \frac{bit}{Amplitudenwert}
 $$
 
 ### Aufgabe 7
