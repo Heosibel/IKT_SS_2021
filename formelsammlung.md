@@ -82,9 +82,9 @@ Koderedundanz: $R_k = l_m \cdot H_k - H_m $ 	($H_k$ wird im Normalfall mit 1 ang
 
 mittlere Kodewortlänge: $l_m = \sum p_i \cdot l_i$ (ungleichmäßiger Kode)	,	$l = \lceil \log_2 N \rceil$ (gleichmäßiger Kode)
 
-Kraft-Ungleichung: $\sum_{i=1}^{N} 2^{-l_i} \leqslant 1$ (notwendige aber nicht hinreichende Bedingung)
+Kraft-Ungleichung: $\sum_{i=1}^{N} 2^{-l_i} \leq 1$ (notwendige aber nicht hinreichende Bedingung)
 
-Schranken der Minimierung: $ H_m \leqslant l_m \lt H_m + 1$	--> mit Erweiterung: $ m \cdot H_m \leqslant m \cdot  l_m \lt m \cdot H_m + 1$
+Schranken der Minimierung: $ H_m \leq l_m \lt H_m + 1$	--> mit Erweiterung: $ m \cdot H_m \leqslant m \cdot  l_m \lt m \cdot H_m + 1$
 
 
 
@@ -106,4 +106,36 @@ Zeichenwahrscheinlichkeiten (allgmein):
 $p(y_0) = p(x_0) \cdot p(y_0|x_0) + p(x_1) \cdot p(y_0|x_1) ... \\ p(y_1) = p(x_0) \cdot p(y_1|x_0) + p(x_1) \cdot p(y_1|x_1) ...$
 
 
+
+allgemeine Übertragung (siehe Übertragungskanal.png):
+
+- Quelleninformationsfluss : $I_Q = f_Q \cdot H_Q \frac{bit}{s}$
+- Anzahl der Kanalzeichen : $l \geq \lceil \frac{H_0}{H_K} \rceil $
+- Quellenkodeinformationsfluss : $I_{KQ} = f_Q \cdot l \cdot H_K$ => Bedingung: $I_{KQ} \geq I_Q$
+
+- Kanalinformationsfluss: $I_K = v_ü = v_s \cdot H_K \frac{bit}{s}$
+- Transinformationsfluss: $I_T = v_s \cdot H_T$
+- Kanalkapazität (maximalwert des Trnasinformationsflusses): $C = max\{I_T\} = max \{v_s \cdot H_T \}$ mit der Nebenbedingung: 
+  - $v_{smax} = 2 B $
+  - $I_{KQ} \leq C$ 
+
+
+
+ungesicherte Übertragung (alles von der allgemeinen Übertragung mit den ein paar Änderungen):
+
+-  Kanalinformationsfluss: $I_K = I_{KQ}$
+- Schrittgeschwindigkeit: $v_s = \frac{I_{KQ}}{H_K} = f_q \cdot l$
+
+- Transinformationsfluss Bedingung: $I_T \lt I_{KQ}$
+
+
+
+gesicherte Übertragung (alles von der allgemeinen Übertragung mit den zusätzlichen Berechnungen):
+
+- Länge der Kodewörter mit Redundanz: $n = l + \Delta l = l + (\frac{H_K}{H_T} - 1) \cdot l$
+-  Kanalinformationsfluss: $I_K = I_{KK} = f_Q \cdot n \cdot H_K$
+
+- $I_{KK} = f_Q \cdot n \cdot H_K$ mit der Bedingung: $I_{KK} \gt I_{KQ}$
+- Schrittgeschwindigkeit: $v_s = f_q \cdot l \cdot \frac{H_K}{H_T} =  f_q \cdot n$
+- Transinformationsfluss Bedingung: $I_T = I_{KQ}$
 
