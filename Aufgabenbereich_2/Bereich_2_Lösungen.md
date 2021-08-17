@@ -43,7 +43,7 @@ a)
 $$
 \begin{align*}
 l_m &= \sum_i p(x_i) \cdot l \\
-&= 0.3 \cdot 1 + 0.15 \cdot 1 + 0.14 \cdot 3 + 0.12 \cdot 3 + 0.1 \cdot 4 + 0.06 \cdot 4+ 0.08 \cdot 4 + 0.06 \cdot 4 + 0.05 \cdot 4 \\
+&= 0.3 \cdot 2 + 0.15 \cdot 2 + 0.14 \cdot 3 + 0.12 \cdot 3 + 0.1\cdot 4+ 0.08 \cdot 4 + 0.06 \cdot 4 + 0.05 \cdot 4 \\
 &= 2,84 \frac{Bit}{QZ} \\
 \\
 H_m &= \sum p(x_i) \cdot \log_2 \frac{1}{p(x_i)} \\
