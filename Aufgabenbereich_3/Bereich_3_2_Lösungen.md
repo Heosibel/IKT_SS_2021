@@ -82,3 +82,20 @@ f_Q &\leq \frac{C}{l \cdot H_K} \leq \frac{50 \cdot 10^3}{6 \cdot 10^5 \cdot 1} 
 t_ü &= \frac{1}{f_Q} = \frac{1}{0.083} = 12 \frac{s}{Bild}  
 \end{align*}
 $$
+c)
+
+Zur Berechnung der mittleren Codewortlänge siehe Abbildung. 
+
+![2_3](/home/tieschne/Dokumente/Seafile/Studium/4_Semester/1_IKT/LösungenAufgabensammlung/Aufgabenbereich_3/2_3.png)
+$$
+\begin{align*}
+l_m &= 2 \\
+\\
+f_Q &\leq \frac{C}{l_m \cdot H_K} \leq \frac{50 \cdot 10^3}{2 \cdot 10^5 \cdot 1} \\
+& \leq 0.25 \\
+\\
+t_ü &= \frac{1}{f_Q} = \frac{1}{0.25} = 4 \frac{s}{Bild} 
+\end{align*}
+$$
+
+
