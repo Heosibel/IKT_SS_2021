@@ -18,7 +18,7 @@ Einsparung durch bessere Kodierung: $(1- \frac {l_m}{l}) \cdot 100$
 
 Markov-Kette: 
 
-- $p(y_{j}) = \sum p(x_{i}) \cdot p(y_{j},x_{i})$
+- $p(y_{j}) = \sum p(x_{i}) \cdot p(y_{j}|x_{i})$​
 
 - $p(x_i) = \sum p(y_j) \cdot p(x_i|y_j)$
 
@@ -30,9 +30,13 @@ Einzelwahrscheinlichkeiten: 	$p(x_i) = \sum_{j=1}^{M} p(x_i,y_j) =>$ Summe einer
 
 
 
-allgmeine Matrix: 	$p(y_{j}|x_{i}) = \begin{pmatrix} p(y_{0}|x_0) & p(y_{1}|x_0) & ... & p(y_{N}|x_0)  \\ p(y_{0}|x_1) & p(y_{1}|x_1) & ... & p(y_{N}|x_1) \\ ... & ... & ... &... \\ p(y_{0}|x_N) & p(y_{1}|x_N) & ... & p(y_{N}|x_N) \end{pmatrix}$ 
+Übergangswahrscheinlichkeiten: 	
+
+​									$p(y_{j}|x_{i}) = \begin{pmatrix} p(y_{0}|x_0) & p(y_{1}|x_0) & ... & p(y_{N}|x_0)  \\ p(y_{0}|x_1) & p(y_{1}|x_1) & ... & p(y_{N}|x_1) \\ ... & ... & ... &... \\ p(y_{0}|x_N) & p(y_{1}|x_N) & ... & p(y_{N}|x_N) \end{pmatrix}$ 
 
 ​									$p(x_{i}|y_{j}) = \begin{pmatrix} p(x_0|y_0) & p(x_0|y_1) & ... & p(x_0|y_{M-1}) \\ p(x_1|y_0) & p(x_1|y_1) & ... & p(x_1|y_{M-1})) \\ ... & ... & ... &... \\ p(x_{N-1}|y_0) & p(x_{N-1}|y_1) & ... & p(x_{N-1}|y_{M-1}) \end{pmatrix}$ 
+
+Verbundwahrscheinlichkeiten									
 
 ​									$p(x_{i},y_{j}) = \begin{pmatrix} p(x_{0},y_0) & p(x_0, y_1) & ... & p(x_0,y_M) \\ p(x_1,y_0) & p(x_1,y_1) & ... & p(x_1,y_M) \\ ... & ... & ... &... \\ p(x_N,y_0) & p(x_N,y_1) & ... & p(x_N,y_M) \end{pmatrix}$
 
