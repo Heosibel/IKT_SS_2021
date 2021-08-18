@@ -16,9 +16,9 @@ $$
 p_s &= 0.02 , N = 64 , f_Q = 100 \frac{QZ}{s}\\
 \\ 
 H(Y|X) &= 2 \cdot \frac{1}{2} \cdot (0.02 \cdot \log_2 \frac{1}{0.02} + 0.98 \cdot \log_2 \frac{1}{0.98})\\
-&= 1.141 \frac{bit}{KZ} \\
+&= 0.141 \frac{bit}{KZ} \\
 \\
-H_T &= H(Y) - H(Y|X) = 1 \frac{bit}{KZ} - 1.141 \frac{bit}{KZ} = 0.859 \frac{bit}{KZ} \\
+H_T &= H(Y) - H(Y|X) = 1 \frac{bit}{KZ} - 0.141 \frac{bit}{KZ} = 0.859 \frac{bit}{KZ} \\
 \\
 l &= \lceil \log_2 N \rceil = \lceil \log_2 64 \rceil = 6 \frac{KZ}{QZ}\\
 \\
