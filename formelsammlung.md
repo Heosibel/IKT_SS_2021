@@ -175,5 +175,34 @@ Orthogonalitätsbedingung: $G \cdot H^T = (H \cdot G^T)^T = 0$
 
 Anzahl Stellen: $n = l + k$
 
-zyklischer Hammingcode Parameter: $(2^{k_1}-1, 2^{k_1}-1-k_1, d_{min}=3)$
+
+
+
+
+#### zyklische Codes
+
+- $k_1 = \mbox{grad M(x)}$​ (Hamming Code: $M(x) = m_1(x) = g(x)$​​)
+
+- $n \leq 2^{k_1} - 1$​ (wenn $n < 2^{k_1} - 1$ dann ist der Code verkürzt, bei Gleichheit ist er dicht gepackt)​
+- $g(x) = kgV \{ m_{\mu}(x), m_{\mu+1}(x), m_{\mu + d_E -2}(x) \}$​
+- n = l + k
+- k = grad g(x)
+
+zyklischer Hammingcode Parameter: 
+
+- $(2^{k_1}-1, 2^{k_1}-1-k_1, d_{min}=3)$​ 
+- $f_e = 2$ 
+- $f_k = 1$​
+
+Abrahamson Code: 
+
+- $g(x) = m_0(x),m_1(x)$
+- $(2^{k_1} - 1, 2^{k_1} - 1 - (k_1 +1) , d_{min} = 4)$
+
+Multiplikationsverfahren: $a(x) = a^*(x) \cdot g(x)$
+
+Divisionsverfahren: 
+
+- $a(x) = a^*(x) \cdot x^k + r(x)$
+- $r(x) = a^*(x) \cdot x^k \mod g(x)$
 
