@@ -121,7 +121,8 @@ allgemeine Übertragung (siehe Übertragungskanal.png):
 - Transinformationsfluss: $I_T = v_s \cdot H_T$
 - Kanalkapazität (maximalwert des Trnasinformationsflusses): $C = max\{I_T\} = max \{v_s \cdot H_T \}$ mit der Nebenbedingung: 
   - $v_{smax} = 2 B $
-  - $I_{KQ} \leq C$ 
+  - $I_{KQ} \leq C$​ 
+- Kapazitätsauslastung: $A = \frac{I_T}{C} \cdot 100\% = \frac{v_s \cdot H_T}{2B \cdot H_T} \cdot 100\% = \frac{v_s}{2B} \cdot 100\%$​
 
 
 
@@ -142,4 +143,37 @@ gesicherte Übertragung (alles von der allgemeinen Übertragung mit den zusätzl
 - $I_{KK} = f_Q \cdot n \cdot H_K$ mit der Bedingung: $I_{KK} \gt I_{KQ}$
 - Schrittgeschwindigkeit: $v_s = f_q \cdot l \cdot \frac{H_K}{H_T} =  f_q \cdot n$
 - Transinformationsfluss Bedingung: $I_T = I_{KQ}$
+
+
+
+### Kanalkodierung
+
+Grad Fehlererkennung: $d_{min} = f_e + 1 \rightarrow$ Korrektur: $f_e = \lfloor \frac{d_{min}}{2} \rfloor$
+
+verfälschte Stellen: $d_{min} = 2 \cdot f_k + 1 \rightarrow$ Korrektur: $f_k = \lfloor \frac{d_{min}-1}{2} \rfloor$
+
+Bündelungsfehler = $f_b \leq k$
+
+Schranken: 
+
+- $f_k = 1 \to 2^k \geq 1 + n$
+- $f_k = 2 \to 2^k \geq 1 + n + \frac{n \cdot (n-1)}{2}$
+- $k \geq log_2 \sum_0^{f_k} {n \choose i}$
+
+Generatormatrix: $G_{l \times n} = [I_lC]$​ 
+
+- Anfang bildet die Einheitsmatrix
+- jede Zeile beinhaltet ein Codewort
+- mittels der Matrix kann ein Codewort codiert werden
+
+Kontrollmatrix: $H_{k \times n} = [C^T I_K]$
+
+- Transponierung der Codewört + auffüllen mit der Einheitsmatrix
+- Ziel: Testen ob ein Fehler bei Übertragen aufgetreten ist $\to$ wenn s gleich 0 dann ist er nicht erkennbar oder nicht da 
+
+Orthogonalitätsbedingung: $G \cdot H^T = (H \cdot G^T)^T = 0$
+
+Anzahl Stellen: $n = l + k$
+
+zyklischer Hammingcode Parameter: $(2^{k_1}-1, 2^{k_1}-1-k_1, d_{min}=3)$
 
