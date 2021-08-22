@@ -127,9 +127,7 @@ f_e = d_{min} - 1 = 3 \\
 f_b \le 5
 $$
 
-####################### in Progress #############################
-
-Berechnung der Fehler von b_1 bis b_5
+##### Berechnung der Fehler von b_1 bis b_5 als Abfolge
 
 1. g(x) berechnen
 2. Binärfolge durch g(x) berechnen 
@@ -139,28 +137,59 @@ $$
 g(x) = (x+1)(x^4+x+1) = x^5+x^4+x^2+1 \\
 $$
 
+##### Berechnung
+
+(Die Division kann über die binäre Schreibweise berechnet werden oder durch die Umwandlung in Potenzen)
 
 
 
+b1:
+$$
+\begin{matrix}
+1&1&1&0&1&0&0&1&1&0&0&1&1&0&0&:&1&1&0&1&0&1\\
+1&1&0&1&0&1 \\
+&&1&1&1&1&0&1 \\
+&&1&1&0&1&0&1 \\
+&&&&1&0&0&0&1&0 \\
+&&&&1&1&0&1&0&1 \\
+&&&&&1&0&1&1&1&0 \\
+&&&&&1&1&0&1&0&1 \\
+&&&&&&1&1&0&1&1&1 \\
+&&&&&&1&1&0&1&0&1  \\
+\end{matrix}\\
+$$
+Rest : $101100 \to$ ist kein Kanalcodewort da der Rest ungleich 0 ist.
 
-Dekodierung im Fall Divisionverfahren: ersten 10 Stellen +
 
-Dekodierung im Fall Multiplikationsverfahren: teilen durch das Generatorpolynom
+
+b2: 001011011101011 : 110101 $\to$ Rest: 1000 $\to$ ist nicht Teil des Alphabetes
+
+
+
+b3: 
+
+(000011011001010) $\to x^{10}+x^9+x^7+x^6+x^3+x$
+
+$\frac{x^{10}+x^9+x^7+x^6+x^3+x}{ x^5+x^4+x^2+1} = x^5 + x$ Rest: 0 $\to$ ist Teil des Alphabetes
+
+​	
+
+b4: 100000000011010 : 110101 $\to$ Rest 0 $\to$ ist Teil des Alphabetes  
+
+
+
+b5: 101010101001000 : 110101 $\to$ Rest 0 $\to$ ist Teil des Alphabetes
 
 
 
 #### Aufgabe 3
 
-Paritätskode: 
-$$
-\mbox{grad } g(x) = k = 1
-$$
+Paritätscode: 
 
-$$
-g(x) = x  \mbox{ oder } g(x) = x+1
-$$
+- $\mbox{grad } g(x) = k = 1$
+- $g(x) = x  \mbox{ oder } g(x) = x+1$
 
-Beispiel für l = 2 ausprobieren
+Beispiel für $l = 2$ prüfen:
 $$
 A^* = \{00,10,01,11 \}
 $$
@@ -180,6 +209,16 @@ g(x) = kgV \{m_0,m_1(x),m_2(x) \} = m_0(x) \cdot m_1(x)
 $$
 
 $$
-k = \mbox{grad }g(x) = \mbox{grad }m_0(x) +\mbox{grad }m_1(x) = 1 + 9 = 10  
+k = \mbox{grad }g(x) = \mbox{grad }m_0(x) +\mbox{grad }m_1(x) = 1 + 9 = 10
 $$
+
+$n = 2^9 -1 = 511$
+
+$n = k + l \to l = n - k = 501$
+
+$d_{min} = 4$
+
+
+
+
 
