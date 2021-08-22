@@ -151,7 +151,7 @@ $$
 \end{pmatrix}
 \cdot 
 \begin{pmatrix}
-0 \\ 1 \\ 1 \\ 1 \\ 1 \\ 1 \\ 0
+1 \\ 1 \\ 1 \\ 1 \\ 1 \\ 0 \\ 1
 \end{pmatrix}
 = 
 \begin{pmatrix}
@@ -180,7 +180,7 @@ $$
 \end{pmatrix}
 \cdot 
 \begin{pmatrix}
-0 \\ 1 \\ 1 \\ 1 \\ 1 \\ 1 \\ 0
+0 \\ 1 \\ 1 \\ 0 \\ 0 \\ 1 \\ 1
 \end{pmatrix}
 = 
 \begin{pmatrix}
