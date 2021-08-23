@@ -118,7 +118,7 @@ allgemeine Übertragung (siehe Übertragungskanal.png):
 - Quellenkodeinformationsfluss : $I_{KQ} = f_Q \cdot l \cdot H_K$ => Bedingung: $I_{KQ} \geq I_Q$
 
 - Kanalinformationsfluss: $I_K = v_ü = v_s \cdot H_K \frac{bit}{s}$
-- Transinformationsfluss: $I_T = v_s \cdot H_T$
+- Transinformationsfluss: $I_T = v_s \cdot H_T$ $\frac{bit}{s}$
 - Kanalkapazität (maximalwert des Trnasinformationsflusses): $C = max\{I_T\} = max \{v_s \cdot H_T \}$ mit der Nebenbedingung: 
   - $v_{smax} = 2 B $
   - $I_{KQ} \leq C$​ 
@@ -129,7 +129,7 @@ allgemeine Übertragung (siehe Übertragungskanal.png):
 ungesicherte Übertragung (alles von der allgemeinen Übertragung mit den ein paar Änderungen):
 
 -  Kanalinformationsfluss: $I_K = I_{KQ}$
-- Schrittgeschwindigkeit: $v_s = \frac{I_{KQ}}{H_K} = f_q \cdot l$
+- Schrittgeschwindigkeit: $v_s = \frac{I_{KQ}}{H_K} = f_q \cdot l$ $\frac{KZ}{s}$
 
 - Transinformationsfluss Bedingung: $I_T \lt I_{KQ}$
 
@@ -141,8 +141,8 @@ gesicherte Übertragung (alles von der allgemeinen Übertragung mit den zusätzl
 -  Kanalinformationsfluss: $I_K = I_{KK} = f_Q \cdot n \cdot H_K$
 
 - $I_{KK} = f_Q \cdot n \cdot H_K$ mit der Bedingung: $I_{KK} \gt I_{KQ}$
-- Schrittgeschwindigkeit: $v_s = f_q \cdot l \cdot \frac{H_K}{H_T} =  f_q \cdot n$
-- Transinformationsfluss Bedingung: $I_T = I_{KQ}$
+- Schrittgeschwindigkeit: $v_s = f_q \cdot l \cdot \frac{H_K}{H_T} =  f_q \cdot n$ $\frac{KZ}{s}$
+- Transinformationsfluss Bedingung: $I_T = I_{KQ}$ $\frac{bit}{s}$
 
 
 
