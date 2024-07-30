@@ -159,15 +159,21 @@ $f_k = (d_min)/2$ (abgerundet) -> 2 korriergierbare Fehler
 
 c)
 
+I)
+
 $l = 6 g(x)=x^4+x^3+1 = M(x)??? \to k=k_1=4$
 
-da primitiv $n=2^k \to n=2^4 = 16$
+n = l+k = 6+4 = 10
 
 -> $m_1 = \alpha^1, \alpha^2, \alpha^4, \alpha^8 \to grad = 4$
 
 -> längster zyklus $2 \to d_{min} = 2+1 = 3$
 
--> (16, 6, 3)
+-> (10, 6, 3)
+
+II)
+
+$b(x) / g(x) = 0 \to b korrekt übertragen oder fehler nicht erkennbar$
 
 #### Aufgabe 4
 
