@@ -187,9 +187,37 @@ $b(x) / g(x) = x^4+x^3+x+1 + r=0 \to b$ korrekt übertragen oder Fehler nicht er
 
 
 
+#### Aufgabe 5
 
+a)
 
+$x_0 \to y_1: 0,1$
 
+$x_0 \to y_0: 1-0,1 = 0,9$
+
+$x_1 \to y_0: 0,05$
+
+$x_1 \to y_1: 1-0,05$
+
+$p(x_0) = 0,5 = p(x_1)$
+
+-> $p(y_0) = 0,5 \cdot 0,9 + 0.5 \cdot 0,05 = 0,95 \cdot 0,5 = 0,475$
+
+-> p(y_1) = 1 -0,475 = 0,525$
+
+b)
+
+$f_Q= 110, l=ld 120 = 7, H_k = 1 weil binär$
+
+$v_s = (f_Q * l * H_k)/H_t$
+
+$H(Y) = 0,998$
+
+$H(Y|X) = 0,377$
+
+$H_t = H(Y) - H(Y|X) = 0,621$
+
+-> $v_s = 1239,94$
 
 
 
