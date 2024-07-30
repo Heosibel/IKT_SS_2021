@@ -155,7 +155,7 @@ b)
 
 $f_e = d_{min} - 1 = 6 -1 = 5$ -> 5 Erkennbare Fehler
 
-$f_k = (d_min)/2$ (abgerundet) -> 2 korriergierbare Fehler
+$f_k = (d_min)/2$ (abgerundet) -> 2 korriegierbare Fehler
 
 c)
 
@@ -173,7 +173,7 @@ n = l+k = 6+4 = 10
 
 II)
 
-$b(x) / g(x) = x^4+x^3+x+1 + r=0 \to b$ korrekt übertragen oder fehler nicht erkennbar da r=0
+$b(x) / g(x) = x^4+x^3+x+1 + r=0 \to b$ korrekt übertragen oder Fehler nicht erkennbar da r=0
 
 -> b* = 11011 (k=4, letzten 4 Stellen von b streichen)
 
