@@ -207,7 +207,7 @@ $p(x_0) = 0,5 = p(x_1)$
 
 b)
 
-$f_Q= 110, l=ld 120 = 7, H_k = 1 weil binär$
+$f_Q= 110, l=ld 120 = 7, H_k = 1$ weil binär
 
 $v_s = (f_Q * l * H_k)/H_t$
 
@@ -226,7 +226,12 @@ c)
 
 -> $I_t = v_s \cdot H_t  = 478 ?????????????$
 
+-> $v_s  = f_Q \cdot H_K / H_t  = 1243 ?????????????$
 
+
+d)
+
+$n= l + \Delta l \to \Delta l = n -l = 11,3 -7 = 4,3$
 
 
 
