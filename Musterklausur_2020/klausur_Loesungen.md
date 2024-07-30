@@ -173,7 +173,9 @@ n = l+k = 6+4 = 10
 
 II)
 
-$b(x) / g(x) = 0 \to b korrekt übertragen oder fehler nicht erkennbar$
+$b(x) / g(x) = x^4+x^3+x+1 + r=0 \to b$ korrekt übertragen oder fehler nicht erkennbar da r=0
+
+-> b* = 11011 (k=4, letzten 4 Stellen von b streichen)
 
 #### Aufgabe 4
 
