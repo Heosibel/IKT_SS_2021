@@ -154,6 +154,12 @@ $k_1 \leq 2^{k_1} - 1 $
 
 -> längster Zyklus von $\alpha^0$ bis $\alpha^4$ -> $d_{min}$ = 5 + 1 = 6
 
+b)
+$f_e = d_{min} - 1 = 6 -1 = 5$ -> 5 Erkennbare Fehler
+$f_k = (d_min)/2 $ (abgerudnet) -> 2 korriergierbare Fehler
+
+c)
+
 #### Aufgabe 4
 
 | Möglichkeiten der Fehlerkorrektur        | Nutzen von redundanten Stellen zur Kontrolle                 |
