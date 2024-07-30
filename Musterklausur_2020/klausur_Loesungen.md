@@ -134,7 +134,25 @@ $n= l+k \\ \to 26 = 15 +k \\ \to k = 11$
 
 Generatorpolynom: hat den Grad 11 
 
+Abschätzung  $k_1$ 
 
+$k_1 \leq 2^{k_1} - 1 $
+
+| $k_1 $ | $n \leq 2^{k_1} - 1 $  | - |
+| ----- | ----- |  ----- | 
+| 4  | $26 \leq 15$    | wrong|
+| 5  | $26 \leq 31$    | right |
+
+-> k1 = 5 -> grad M(x)
+
+
+| m | $\alpha$ | grad m  | 
+| ----- | ----- | ----- |
+| $m_0$ | $\alpha^0$    |1|
+| $m_1$  | $\alpha^1, \alpha^2, \alpha^4, \alpha^8, \alpha^{16}$    |5| 
+| $m_3$  | $\alpha^3, \alpha^6, \alpha^{12}, \alpha^{24}, \alpha^{17}$    |5| 
+
+-> längster Zyklus von $\alpha^0$ bis $\alpha^4$ -> $d_{min}$ = 5 + 1 = 6
 
 #### Aufgabe 4
 
