@@ -134,7 +134,48 @@ $n= l+k \\ \to 26 = 15 +k \\ \to k = 11$
 
 Generatorpolynom: hat den Grad 11 
 
+Abschätzung  $k_1$ mit $k_1 \leq 2^{k_1} - 1 $
 
+| $k_1 $ | $n \leq 2^{k_1} - 1 $  | - |
+| ----- | ----- |  ----- | 
+| 4  | $26 \leq 15$    | wrong|
+| 5  | $26 \leq 31$    | right |
+
+-> k1 = 5 -> grad M(x)
+
+| m | $\alpha$ | grad m  | 
+| ----- | ----- | ----- |
+| $m_0$ | $\alpha^0$    |1|
+| $m_1$  | $\alpha^1, \alpha^2, \alpha^4, \alpha^8, \alpha^{16}$    |5| 
+| $m_3$  | $\alpha^3, \alpha^6, \alpha^{12}, \alpha^{24}, \alpha^{17}$    |5| 
+
+-> längster Zyklus von $\alpha^0$ bis $\alpha^4$ -> $d_{min}$ = 5 + 1 = 6
+
+b)
+
+$f_e = d_{min} - 1 = 6 -1 = 5$ -> 5 Erkennbare Fehler
+
+$f_k = (d_min)/2$ (abgerundet) -> 2 korriegierbare Fehler
+
+c)
+
+I)
+
+$l = 6 g(x)=x^4+x^3+1 = M(x)??? \to k=k_1=4$
+
+n = l+k = 6+4 = 10
+
+-> $m_1 = \alpha^1, \alpha^2, \alpha^4, \alpha^8 \to grad = 4$
+
+-> längster zyklus $2 \to d_{min} = 2+1 = 3$
+
+-> (10, 6, 3)
+
+II)
+
+$b(x) / g(x) = x^4+x^3+x+1 + r=0 \to b$ korrekt übertragen oder Fehler nicht erkennbar da r=0
+
+-> b* = 11011 (k=4, letzten 4 Stellen von b streichen)
 
 #### Aufgabe 4
 
@@ -146,13 +187,51 @@ Generatorpolynom: hat den Grad 11
 
 
 
+#### Aufgabe 5
+
+a)
+
+$x_0 \to y_1: 0,1$
+
+$x_0 \to y_0: 1-0,1 = 0,9$
+
+$x_1 \to y_0: 0,05$
+
+$x_1 \to y_1: 1-0,05$
+
+$p(x_0) = 0,5 = p(x_1)$
+
+-> $p(y_0) = 0,5 \cdot 0,9 + 0.5 \cdot 0,05 = 0,95 \cdot 0,5 = 0,475$
+
+-> p(y_1) = 1 -0,475 = 0,525$
+
+b)
+
+$f_Q= 110, l=ld 120 = 7, H_k = 1$ weil binär
+
+$v_s = (f_Q * l * H_k)/H_t$
+
+$H(Y) = 0,998$
+
+$H(Y|X) = 0,377$
+
+$H_t = H(Y) - H(Y|X) = 0,621$
+
+-> $v_s = 1239,94$
+
+-> $I_t = f_Q \cdot l = 110 \cdot 7 = 770 ?????????????$
 
 
+c)
+
+-> $I_t = v_s \cdot H_t  = 478 ?????????????$
+
+-> $v_s  = f_Q \cdot H_K / H_t  = 1243 ?????????????$
 
 
+d)
 
-
-
+$n= l + \Delta l \to \Delta l = n -l = 11,3 -7 = 4,3$
 
 
 
